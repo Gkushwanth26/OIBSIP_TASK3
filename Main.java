@@ -126,6 +126,29 @@ public class Main
 		            break;
 		            default:System.out.println("Please select an option from 1 to 6"); }
 		            }
-		    }	
+		    }
+		    else{
+		        login();
+		        while(flag==true) {
+		        System.out.println("\nchoose one option to perform:");
+		        System.out.println("\n1.DEPOSIT\n2.WITHDRAW\n3.TRANSFER\n4.TRANSACTION HISTORY\n5.CHECK BALANCE\n6.QUIT");
+		        choice=sc.nextInt();
+		        switch(choice) {
+		            case 1:deposit();
+		            break;
+		            case 2:withdraw();
+		            break;
+		            case 3:transfer();
+		            break;
+		            case 4:trans_History();
+		            break;
+		            case 5:total_bal();
+		            break;
+		            case 6:flag=false;
+		            System.out.println("\nplease collect your card\nThank you");
+		            break;
+		            default:System.out.println("Please select an option from 1 to 6"); }
+		            }
+		    }
 	    }
 }
